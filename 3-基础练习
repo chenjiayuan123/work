@@ -1,0 +1,88 @@
+从键盘输入一个班5个学生的分数，求和并输出
+	•	public static void main(String[] args) {
+	•	    Scanner input = new Scanner(System.in);
+	•	    System.out.println("请输入第一个数");
+	•	    int a = input.nextInt();
+	•	    System.out.println("请输入第二个数");
+	•	    int b = input.nextInt();
+	•	    System.out.println("请输入第三个数");
+	•	    int c = input.nextInt();
+	•	    System.out.println("请输入第四个数");
+	•	    int d = input.nextInt();
+	•	    System.out.println("请输入第五个数");
+	•	    int e = input.nextInt();
+	•	
+	•	    System.out.println("这五个数的和为："+""+(a+b+c+d+e));
+	•	
+	•	}
+	•	
+	•	从键盘输入某个十进制整数数，转换成对应的二进制整数并输出。
+	•	public static void main(String[] args) {
+	•	    Scanner in = new Scanner(System.in);
+	•	
+	•	    System.out.println("请输入一个十进制数");
+	•	
+	•	    int input = in.nextInt();
+	•	
+	•	    int s = Integer.parseInt(Integer.toBinaryString(input));
+	•	
+	•	    System.out.println(s);
+	•	}
+	•	
+	•	输入一批整数，使用循环求出最大值与最小值，输入0时结束。
+	•	public static void main(String[] args) {
+	•	    int [] arr = {2,54,2,3,4,6,67,98,56};
+	•	
+	•	    for (int i = 0; i < arr.length; i++) {
+	•	        for (int j = 0; j < arr.length - 1 - ; j++) {
+	•	            int num;
+	•	
+	•	            if(arr [j] > arr[j + 1]){
+	•	                num = arr[j];
+	•	                arr[j] =  arr[j + 1];
+	•	                arr[j + 1] = num;
+	•	            }
+	•	        }
+	•	    }
+	•	    for (int i : arr) {
+	•	        System.out.println(i+" ");
+	•	    }
+	•	}
+	•	
+	•	找出能被5或6整除，但不能被两者同时整除的数
+	•	public static void main (String[]args){
+	•	    Scanner in = new Scanner(System.in);
+	•	    System.out.println("请输入数字：");
+	•	    int input = in.nextInt();
+	•	    if ((input % 6 == 0 || input % 5 == 0) && input % 30 != 0) {
+	•	        System.out.println("这个数能被5或6整除，但不能被两者同时整除的数");
+	•	        System.out.println(input);
+	•	    } else {
+	•	        System.out.println("这个数不满足：能被5或6整除，但不能被两者同时整除的数");
+	•	    }
+	•	}
+	•	
+	•	请输入一个任意年份,判断是否是闰年
+	•	Scanner in = new Scanner(System.in);
+	•	    System.out.println(“请输入年份：");
+	•	    int input = in.nextInt();
+	•	    if ((input % 4 == 0 && input % 100 != 0) || input % 400 == 0) {			System.out.println(input + "年：是闰年");
+	•	    } else {
+	•	        System.out.println(input + "年：不是闰年");
+	•	    }
+	•	
+	•	}
+	•	
+	•	30以内的随机数,请输入任意一个数,循环10次,求这个数在随机数范围内出现的次数
+	•	 public static void main(String[] args) {
+	•	      Scanner type = new Scanner(System.in);
+	•	      int count = 0;
+	•	      int no = type.nextInt();
+	•	      for (int i = 0; i < 10; i++) {
+	•	          if (no == 30 * Math.random()) {
+	•	              count++;
+	•	          }
+	•	      }
+	•	      System.out.println(count);
+	•	  }
+	•
